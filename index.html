@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Weather</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+  </head>
+  <body>
+    <div id="weather-dashboard"> </div>
+    <nav>
+      <h1>Weather Dashboard</h1>
+    </nav>
+
+    <div class="display">
+    <div class="search">
+      <!-- Form input for city search -->
+      <form id="city-form">
+        <label for="city-input">Search for a City:</label>
+        <input type="text" id="city-input" required>
+        <button type="submit">Search</button>
+      </form>
+      <!-- Search history display -->
+      <div id="search-history"></div>
+    </div>
+    
+    <div class="results">
+      <!-- Current weather display -->
+      <div id="current-weather"></div>
+      
+      <!-- 5-day forecast display -->
+      <div id="forecast"></div>
+      
+    </div>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: navy;
+    color: white;
+    padding: 3%;
+}
+
+h1{
+    position: absolute;
+    top: 1%;
+    right: 30%;
+}
+
+#city-form {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button {
+    margin: 1%;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#search-history {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.history-item {
+    font-size: x-large;
+    background-color: navy;
+    color: white;
+    padding: 8px 16px; /* Adjust padding for spacing inside the "button" */
+    margin: 8px; /* Adjust margin for spacing between "buttons" */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+        background-color: slategrey;
+    }
+    
+}
+
+#current-weather{
+    margin-top: 5%;
+    margin-left: 10%;
+    position: relative;
+}
+
+#forecast {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-right: 0;
+    min-width: 80%;
+    color: white;
+}
+
+.display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forecast-item {
+    background-color: slategray;
+    padding: 1%;
+    margin: 1%;
+    width: 100%;
+    box-sizing: border-box;
+}
